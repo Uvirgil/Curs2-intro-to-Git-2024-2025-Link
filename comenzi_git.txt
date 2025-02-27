@@ -13,6 +13,9 @@
 ## Desciderea editorului Vizual Studio Code ca editor default pentru git
     git config --global core.editor "code --wait"
 
+## Denumirea branch-ului initial main 
+    git config --global init.defaulBranch main
+
 
 ## initializeaza proiectul de git local - creaza un folder .git ascuns
     git init
@@ -49,9 +52,17 @@
 
 
 ## Pentru a pune codul pe server
-git push 
-git push origin
+    git push 
+    git push origin
 
 ## Pentru a lua codul de pe server
-git pull
-git pull origin
+    git pull
+    git pull origin
+
+
+## Pentru lucru cu branch-uri 
+## Listarea tuturor branch -urilor
+    git branch
+
+## Redenuirea brnach-ului curent in ce este dupa -m 
+    git branch -m main
