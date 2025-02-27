@@ -7,35 +7,38 @@
 
 ## Setarea emailului utilizatorului
     git config --user.email "emailul.tau@ceva.com"
-##  Citirea emailului utilizatorului
+## Citirea emailului utilizatorului
     git config --user.email
+    
+## Desciderea editorului Vizual Studio Code ca editor default pentru git
+    git config --global core.editor "code --wait"
 
 
 ## initializeaza proiectul de git local - creaza un folder .git ascuns
-git init
+    git init
 
 ## descarca de pe server un poriect de git
-git clone https://github.com/username/proiect
+    git clone https://github.com/username/proiect
 
 
 ## Arata lista de commituri
-git log
-git log --oneline  (--oneline  pe o singura linie)
+    git log
+    git log --oneline  (--oneline  pe o singura linie)
 
 ## Arata statusul fisierelor (daca sunt schimbate)
-git status
-git status -s  (-s  versiunea scurta) 
+    git status
+    git status -s  (-s  versiunea scurta) 
 
 
-### Comenzi dde adaugare a fisierelor in STAGED (inainte de crearea commitului)
-git add filename
-git add .
-git add filename.*
-git add filename1 filename2 filename3
+## Comenzi dde adaugare a fisierelor in STAGED (inainte de crearea commitului)
+    git add filename
+    git add .
+    git add filename.*
+    git add filename1 filename2 filename3
 
-### Comenzi de creare a commitului
-git commit -m "Acesta este un mesaj descriptiv al commitului"  (-m = mesaj)
-git commit -message "Acesta este un mesaj descriptiv al commitului"  (-message = mesaj)
+## Comenzi de creare a commitului
+    git commit -m "Acesta este un mesaj descriptiv al commitului"  (-m = mesaj)
+    git commit -message "Acesta este un mesaj descriptiv al commitului"  (-message = mesaj)
 
-### Comanda de adaugare + commit (!!! Fisierele trebuie sa fii fost incluse intr-un commit inainte)
-git commit -am "Acesta este un mesaj descriptiv al commitului" 
+## Comanda de adaugare + commit (!!! Fisierele trebuie sa fii fost incluse intr-un commit inainte)
+    git commit -am "Acesta este un mesaj descriptiv al commitului" 
