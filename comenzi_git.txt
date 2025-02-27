@@ -22,13 +22,20 @@ git clone https://github.com/username/proiect
 git log
 git log --oneline  (--oneline  pe o singura linie)
 
-## Arata statusul fisierlelor (daca sunt schimbate)
+## Arata statusul fisierelor (daca sunt schimbate)
 git status
 git status -s  (-s  versiunea scurta) 
 
 
-### Comenzi de creare a comiitului
+### Comenzi dde adaugare a fisierelor in STAGED (inainte de crearea commitului)
 git add filename
 git add .
 git add filename.*
 git add filename1 filename2 filename3
+
+### Comenzi de creare a commitului
+git commit -m "Acesta este un mesaj descriptiv al commitului"  (-m = mesaj)
+git commit -message "Acesta este un mesaj descriptiv al commitului"  (-message = mesaj)
+
+### Comanda de adaugare + commit (!!! Fisierele trebuie sa fii fost incluse intr-un commit inainte)
+git commit -am "Acesta este un mesaj descriptiv al commitului" 
