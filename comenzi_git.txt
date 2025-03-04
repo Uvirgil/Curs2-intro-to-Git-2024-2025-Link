@@ -5,13 +5,16 @@
 ## Citirea numelui utilizatorului
     git config --global user.name
 
+
 ## Setarea emailului utilizatorului
     git config --user.email "emailul.tau@ceva.com"
 ## Citirea emailului utilizatorului
     git config --user.email
+
     
 ## Desciderea editorului Vizual Studio Code ca editor default pentru git
     git config --global core.editor "code --wait"
+
 
 ## Denumirea branch-ului initial main 
     git config --global init.defaulBranch main
@@ -20,13 +23,17 @@
 ## initializeaza proiectul de git local - creaza un folder .git ascuns
     git init
 
+
 ## descarca de pe server un poriect de git
     git clone https://github.com/username/proiect
 
 
 ## Arata lista de commituri
+## Arata lista grafica a commiturilor
     git log
     git log --oneline  (--oneline  pe o singura linie)
+    git log --graph --oneline --all
+
 
 ## Arata statusul fisierelor (daca sunt schimbate)
     git status
@@ -39,9 +46,11 @@
     git add filename.*
     git add filename1 filename2 filename3
 
+
 ## Comenzi de creare a commitului
     git commit -m "Acesta este un mesaj descriptiv al commitului"  (-m = mesaj)
     git commit -message "Acesta este un mesaj descriptiv al commitului"  (-message = mesaj)
+
 
 ## Comanda de adaugare + commit (!!! Fisierele trebuie sa fii fost incluse intr-un commit inainte)
     git commit -am "Acesta este un mesaj descriptiv al commitului" 
@@ -55,6 +64,7 @@
     git push 
     git push origin
 
+
 ## Pentru a lua codul de pe server
     git pull
     git pull origin
@@ -63,6 +73,7 @@
 ## Pentru lucru cu branch-uri 
 ## Listarea tuturor branch -urilor
     git branch
+    
 
 ## Redenuirea brnach-ului curent in ce este dupa -m 
     git branch -m main
